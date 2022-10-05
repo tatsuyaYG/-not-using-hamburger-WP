@@ -1,0 +1,14 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+
+.p-tag-area{
+    &__text{
+        padding-top: 5%;
+        padding-left: 15%;
+        @include mq.mq(pc){
+            padding-top: 1vw;
+            padding-left: 5vw;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@charset "UTH-8";
+html{
+    font-size: 62.5%;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Roboto','M PLUS 1','M PLUS Code Latin', sans-serif;
+    color: #121212;
+    font-size: 1.6rem;
+    line-height: calc(23 / 16);
+    overflow-x: hidden;
+    min-width: 340px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ol{
+    margin: 1em;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}

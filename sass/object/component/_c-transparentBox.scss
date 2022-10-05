@@ -1,0 +1,10 @@
+.c-transparentBox{
+    &--white{
+        background-color: #FFF;
+        opacity: 0.8;
+    }
+    &--gray{
+        background-color: #000000;
+        opacity: 0.29;
+    }
+}

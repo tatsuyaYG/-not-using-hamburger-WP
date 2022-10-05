@@ -1,0 +1,61 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-front-section{
+    max-width: 450px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    transition: all 0.3s;
+    @include mq.mq(tab){
+        max-width: 500px;
+    }
+    @include mq.mq(pc){
+        max-width:32.5vw;
+    }
+    &--takeout{
+        background: no-repeat url("../image/takeout.jpg");
+        background-size: cover;
+    }
+    &--eatIn{
+        background: no-repeat url("../image/eatin.jpg");
+        background-size: cover;
+    }
+    &__title{
+        color: color.$color-text--white;
+        font-size: 4.1rem;
+        font-weight: bold;
+        margin: 0 auto 10px 15px;
+        padding-top: 11px;
+        position: absolute;
+        top: 0;
+        transition: all 0.3s;
+        @include mq.mq(tab){
+            font-size: 4.4rem;
+        }
+        @include mq.mq(pc){
+            font-size: 8rem;
+            margin: 0 auto 30px 22px;
+            padding-top: 25px;
+        }
+
+        //アンダーライン
+        &::after{
+            content:'';
+            width: 34px;
+            height: 4px;
+            background-color: #FFF;
+            position: absolute;
+            top:100%;
+            left: 0%;
+            @include mq.mq(pc) {
+                width: 63px;
+            }
+        }
+
+    }
+}

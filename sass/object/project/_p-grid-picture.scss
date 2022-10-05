@@ -1,0 +1,15 @@
+@use "../../foundation/mixin" as mq;
+
+.p-grid-picture{
+    margin-top: 10%;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+
+    @include mq.mq(tab){
+        margin-top: 30vw;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+    @include mq.mq(pc){
+        margin-top: 60px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,78 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-about {
+    background: no-repeat url("../image/mapSP.jpg");
+    background-size: cover;
+    height: 100%;
+    margin-top: 49px;
+    position: relative;
+
+    @include mq.mq(tab) {
+        background-image: url("../image/mapTab.jpg");
+    }
+
+    @include mq.mq(pc) {
+        width: 100%;
+        height: 649px;
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: color.$color-text--white;
+        font-weight: bold;
+
+        @include mq.mq(pc) {
+            font-size: 3.6rem;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: color.$color-text--white;
+        font-weight: bold;
+        line-height: calc(33 /14);
+
+        @include mq.mq(pc) {
+            font-size: 1.6rem;
+            line-height: calc(33 /16);
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 20px;
+        }
+    }
+
+    &__textarea {
+        position: relative;
+        padding: 40px;
+        height: 100%;
+        z-index: 100;
+        @include mq.mq(pc) {
+            width: 65%;
+        }
+    }
+
+    &__layer1{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    &__layer2{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 60%;
+        @include mq.mq(tab) {
+            height: 100%;
+        }
+        @include mq.mq(pc) {
+            width: 65%;
+        }
+
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../foundation/mixin" as mq;
+
+.p-button{
+    &--single{
+        height: 81px;
+        width: 100%;
+        background: transparent linear-gradient(180deg, #F2EDE9 0%, #DED8D3 100%) 0% 0% no-repeat padding-box;
+        border-color: #707070;
+        border-radius: 20px;
+        font-weight: bold;
+        text-align: center;
+        @include mq.mq(tab){
+            width: 51vw;
+        }
+        @include mq.mq(pc){
+            width: 35%;
+        }
+    }
+}

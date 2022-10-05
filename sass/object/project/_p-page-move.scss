@@ -1,0 +1,40 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-page-move{
+    display: flex;
+    justify-content: space-between;
+    color: color.$color-text--gray;
+    padding-top: 40px;
+    &--number{
+        display: none;
+    }
+    @include mq.mq(tab){
+        display: none;
+
+        &--number{
+            display: flex;
+            align-items: center;
+            color: color.$color-text--gray;
+            justify-content: center;
+            gap: 13px;
+            padding-top: 106px;
+            &__item{
+                display: flex;
+                height: 35px;
+                width: 35px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__active{
+            color: color.$color-text--white;
+        }
+    }
+
+    @include mq.mq(pc) {
+        &--number{
+            gap: 15px;
+        }
+    }
+}

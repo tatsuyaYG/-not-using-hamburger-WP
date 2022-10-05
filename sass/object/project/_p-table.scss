@@ -1,0 +1,18 @@
+@use "../../foundation/mixin" as mq;
+
+.p-table{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    td{
+        text-align: center;
+        vertical-align: middle;
+    }
+    &__1{
+        width: 35%;
+    }
+    &__2{
+        width: 65%;
+    }
+    
+}

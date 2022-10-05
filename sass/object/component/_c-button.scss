@@ -1,0 +1,24 @@
+.c-button{
+    // 検索ボタン
+    &--search{
+        border: 1px solid #707070;
+        border-radius: 0.5em;
+        background-color: #F2EDE9;
+    }
+    // 白丸角
+    &--circleWhite-white{
+        border: 1px solid #FFF;
+        border-radius:5em;
+        background-color: #FFF;
+    }
+    //白角（灰色枠）
+    &--cornerGray-white{
+        border: 1px solid #707070;
+        background-color: #FFF;
+    }
+    //茶角（灰色枠）
+    &--cornerGray-brown{
+        border: 1px solid #707070;
+        background-color: #3C2B1C;
+    }
+}

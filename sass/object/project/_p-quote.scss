@@ -1,0 +1,13 @@
+@use "../../foundation/mixin" as mq;
+
+.p-quote{
+    padding: 30px 20px 30px 20px;
+
+    @include mq.mq(tab){
+        padding: 50px 50px 60px 50px;
+    }
+
+    &__link{
+        padding-top: 30px;
+    }
+}

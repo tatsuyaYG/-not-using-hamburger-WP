@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as mq;
+
+.u-underline-front{
+    &--about{
+    border-bottom-width: 2px;
+    width: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mq.mq(pc) {
+        margin-left: 5%;
+    }
+
+    }
+}

@@ -1,0 +1,8 @@
+@use "../../foundation/mixin" as mq;
+
+.u-margin--front{
+    @include mq.mq(tab) {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+}

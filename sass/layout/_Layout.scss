@@ -1,0 +1,28 @@
+@use "../foundation/colors" as color;
+@use "../foundation/mixin" as mq;
+
+
+.l-header{
+    background-color: color.$color-header-background;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    @include mq.mq(pc){
+        flex-direction: row;
+    }
+}
+
+@include mq.mq(pc){
+    .l-wrapper{
+        display: flex;
+    }
+}
+
+.l-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    &.is-open{
+        position: fixed;
+    }
+}

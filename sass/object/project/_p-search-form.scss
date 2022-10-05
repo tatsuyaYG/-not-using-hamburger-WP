@@ -1,0 +1,52 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-search-form{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq.mq(pc){
+        margin: 0;
+    }
+    &__textForm{
+        width: 23rem;
+        height: 4.6rem;
+        transition: all 0.3s;
+        @include mq.mq(tab){
+            width: 39.6rem;
+        }
+        @include mq.mq(pc-1400){
+            width: 39.6rem;
+        }
+
+    }
+    &__textBox{
+        width: 23rem;
+        height: 4.6rem;
+        padding-left: 4.5rem;
+        background-color: #FFF;
+        font-weight: bold;
+        color: color.$color-text--gray;
+        transition: all 0.3s;
+        @include mq.mq(tab){
+            width: 39.6rem;
+        }
+        @include mq.mq(pc-1400){
+            width: 39.6rem;
+        }
+
+    }
+    &__button{
+        width: 7.8rem;
+        height: 4.6rem;
+        text-align: center;
+        margin-left: 12px;
+        font-weight: bold;
+        color: color.$color-text--gray;
+        transition: all 0.3s;
+        @include mq.mq(tab){
+            width: 13.6rem;
+        }
+    }
+}

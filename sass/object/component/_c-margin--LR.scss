@@ -1,0 +1,15 @@
+@use "../../foundation/mixin" as mq;
+
+.c-margin--LR{
+    margin-left: 20px;
+    margin-right: 20px;
+    @include mq.mq(tab) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @include mq.mq(pc) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+

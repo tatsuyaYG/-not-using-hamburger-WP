@@ -1,0 +1,26 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-header{
+    width: 100%;
+    @include mq.mq(pc){
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 65px;
+        padding-right: 31px;
+    }
+    &__logo{
+        font-size: 4rem;
+        font-weight: bold;
+        color: color.$color-header-logo;
+        margin-top: 40px;
+        text-align: center;
+        transition: all 0.3s;
+        @include mq.mq(pc){
+            margin-top: 0;
+        }
+        @include mq.mq(pc-1400){
+            font-size: 6.4rem;
+        }
+    }
+}

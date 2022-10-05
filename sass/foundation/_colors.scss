@@ -1,0 +1,13 @@
+@use "./palette" as pal;
+
+$color-base-background: pal.$palette-white;
+$color-header-background: pal.$palette-brown-pale;
+$color-header-logo: pal.$palette-gray;
+$color-header-menuButton: pal.$palette-gray;
+$color-header-menuButton-open: pal.$palette-gray;
+$color-footer-background: pal.$palette-brown-thin;
+$color-sidebar-background: pal.$palette-gray-pale;
+$color-text--white: pal.$palette-white-true;
+$color-text--gray: pal.$palette-gray;
+$color-text--brown: pal.$palette-brown-dark;
+$color-card--brown: pal.$palette-brown;

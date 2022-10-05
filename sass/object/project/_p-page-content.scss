@@ -1,0 +1,29 @@
+@use "../../foundation/mixin" as mq;
+
+.p-page-content{
+    display: flex;
+    padding-top: 30px;
+    gap: 5px;
+    p{
+        width: 55%;
+    }
+    img{
+        width: 40%;
+        height: 25vw;
+    }
+    @include mq.mq(tab){
+            padding-top: 60px;
+    }
+    @include mq.mq(pc){
+        gap: 40px;
+        img{
+            width: 30vw;
+            height: 20vw;
+        }
+    }
+
+    &__2{
+        flex-direction: row-reverse;
+    }
+
+}

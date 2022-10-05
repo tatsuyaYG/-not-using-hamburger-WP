@@ -1,0 +1,10 @@
+@use "../../foundation/colors" as color;
+
+.p-main{
+    display: flex;
+    flex-direction: column;
+    background-color:color.$color-base-background;
+    td{
+        height: 70px;
+    }
+}
