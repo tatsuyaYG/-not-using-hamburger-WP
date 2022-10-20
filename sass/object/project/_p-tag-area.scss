@@ -6,9 +6,6 @@
     &__text{
         padding-top: 5%;
         padding-left: 15%;
-        @include mq.mq(pc){
-            padding-top: 1vw;
-            padding-left: 5vw;
-        }
+        padding-bottom: 5%;
     }
 }

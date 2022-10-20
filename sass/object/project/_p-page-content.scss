@@ -3,13 +3,13 @@
 .p-page-content{
     display: flex;
     padding-top: 30px;
-    gap: 5px;
+    gap: 20px;
     p{
         width: 55%;
     }
     img{
-        width: 40%;
-        height: 25vw;
+        width: 37vw !important;
+        height: 22vw !important;
     }
     @include mq.mq(tab){
             padding-top: 60px;
@@ -17,8 +17,8 @@
     @include mq.mq(pc){
         gap: 40px;
         img{
-            width: 30vw;
-            height: 20vw;
+            width: 30vw !important; 
+            height: 20vw !important;
         }
     }
 

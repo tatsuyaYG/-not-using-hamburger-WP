@@ -1,5 +1,5 @@
 <?php get_header( ); ?>
-
+page.php
             <main class="p-main">
                 <div class="p-main-visual p-main-visual__page">
                     <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/page-main.jpg" alt="シングルページ">
@@ -7,6 +7,7 @@
                 </div>
 
                 <section class="p-single-page c-margin--LR">
+                    <?php the_content( ); ?>
                         <h2>見出しh2</h2>
                         <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
                         <h3>見出しh3</h3>

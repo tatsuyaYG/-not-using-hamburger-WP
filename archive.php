@@ -24,8 +24,14 @@
         <?php endif; ?>
 
         <div class="p-page-move">
-            <a href="#">＜＜前へ</a>
-            <a href="#">次へ＞＞</a>
+            <div class="p-page-move__prev">
+                <?php the_post_navigation(array('prev_text'=>'&lt&lt;前へ' )); ?>
+            </div>
+            <div class="p-page-move__next">
+                <?php the_post_navigation(array('next_text'=>'次へ&gt;&gt;' )); ?>
+            </div>
+            <!-- <a href="#">＜＜前へ</a>
+            <a href="#">次へ＞＞</a> -->
         </div>
         <?php if (function_exists( 'custom_wp_pagenavi' )){
              custom_wp_pagenavi();

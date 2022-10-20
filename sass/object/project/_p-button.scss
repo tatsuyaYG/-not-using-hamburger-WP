@@ -9,6 +9,7 @@
         border-radius: 20px;
         font-weight: bold;
         text-align: center;
+        line-height: 81px;
         @include mq.mq(tab){
             width: 51vw;
         }

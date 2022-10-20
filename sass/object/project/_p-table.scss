@@ -8,11 +8,11 @@
         text-align: center;
         vertical-align: middle;
     }
-    &__1{
+    td:first-child{
         width: 35%;
     }
-    &__2{
-        width: 65%;
-    }
+    // &__2{
+    //     width: 65%;
+    // }
     
 }

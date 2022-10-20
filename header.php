@@ -10,6 +10,7 @@
 </head>
 
 <body <?php body_class( 'l-page-layout' );?>>
+<?php wp_body_open(); ?>
     <button id="menu-button" class="p-menu-button js-menu">Menu</button>
 
 
