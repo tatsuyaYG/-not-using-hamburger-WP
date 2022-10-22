@@ -8,24 +8,37 @@
                     <div class="c-background--gray p-main-visual--archive__layer"></div>
                 </div>
 
-                <section class="p-humburger-menuList c-margin--LR">
-                    <div class="p-humburger-menuList__title">
+                <section class="p-hamburger-menuList c-margin--LR">
+                    <div class="p-hamburger-menuList__title">
                         <h1>検索結果：<?php echo $wp_query->found_posts; ?>件</h1>
                     </div>
+
                     <?php if( have_posts()): ?>
                         <?php
                         while ( have_posts( )):
                             the_post( );
                             ?>
+
                             <?php get_template_part( 'template-parts/loop','post' ); ?>
                         <?php endwhile; ?>
                         <?php else: ?>
-                        <p class="p-humburger-menuList__title">検索単語に一致するものは見つかりませんでした。</p>
+                        <p class="p-hamburger-menuList__title">検索単語に一致するものは見つかりませんでした。</p>
                     <?php endif; ?>
 
                     <div class="p-page-move">
-                        <a href="#">＜＜前へ</a>
-                        <a href="#">次へ＞＞</a>
+                        <?php
+                            $prev = get_previous_posts_link('＜＜前へ');
+                            $next = get_next_posts_link('次へ＞＞');?>
+                            <div class="p-page-move__prev">
+                            <?php if($prev){
+                                echo $prev;
+                            }?>
+                            </div>
+                            <div class="p-page-move__next">
+                            <?php if($next){
+                                echo $next;
+                            }?>
+                            </div>
                     </div>
                     <?php if (function_exists( 'custom_wp_pagenavi' )){
                         custom_wp_pagenavi();

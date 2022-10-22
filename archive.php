@@ -1,5 +1,4 @@
 <?php get_header( ); ?>
-
 <main class="p-main">
     <div class="p-main-visual p-main-visual--archive">
         <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/archive-main.jpg" alt="アーカイブページ">
@@ -8,8 +7,8 @@
         <div class="c-background--gray p-main-visual--archive__layer"></div>
     </div>
 
-    <section class="p-humburger-menuList c-margin--LR">
-        <div class="p-humburger-menuList__title">
+    <section class="p-hamburger-menuList c-margin--LR">
+        <div class="p-hamburger-menuList__title">
             <h1>小見出しが入ります</h1>
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
@@ -24,14 +23,19 @@
         <?php endif; ?>
 
         <div class="p-page-move">
+            <?php
+                $prev = get_previous_posts_link('＜＜前へ');
+                $next = get_next_posts_link('次へ＞＞');?>
             <div class="p-page-move__prev">
-                <?php the_post_navigation(array('prev_text'=>'&lt&lt;前へ' )); ?>
+                <?php if($prev){
+                    echo $prev;
+                    }?>
             </div>
             <div class="p-page-move__next">
-                <?php the_post_navigation(array('next_text'=>'次へ&gt;&gt;' )); ?>
+                <?php if($next){
+                    echo $next;
+                }?>
             </div>
-            <!-- <a href="#">＜＜前へ</a>
-            <a href="#">次へ＞＞</a> -->
         </div>
         <?php if (function_exists( 'custom_wp_pagenavi' )){
              custom_wp_pagenavi();

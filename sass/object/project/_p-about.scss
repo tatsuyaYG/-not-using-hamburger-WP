@@ -2,7 +2,8 @@
 @use "../../foundation/mixin" as mq;
 
 .p-about {
-    background: no-repeat url("../image/mapSP.jpg");
+    background-image: url("../image/mapSP.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     margin-top: 49px;

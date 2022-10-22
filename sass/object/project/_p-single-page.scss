@@ -69,19 +69,19 @@
     ol{
         margin-top: 30px;
         margin-bottom: 30px;
+        padding-left: 1rem;
         li{
         list-style-type: decimal;
         }
         @include mq.mq(tab){
             margin-top: 60px;
-            padding-left: 45px;
         }
     }
     ul{
         padding-top: 30px;
         padding-bottom: 14px;
+        padding-left: 1rem;
         @include mq.mq(tab){
-            padding-left: 45px;
             padding-bottom: 46px;
         }
     }

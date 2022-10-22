@@ -8,6 +8,6 @@
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
         <button class="c-button--circleWhite-white p-item-card__button"
-            onclick="<?php the_permalink(); ?>">詳しく見る</button>
+            onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
     </div>
 </section>

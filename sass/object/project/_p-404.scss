@@ -1,0 +1,44 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-404{
+    &__visual{
+        position: relative;
+        img{
+            height: 30vh;
+            width: 100vw;
+            object-fit: none;
+        }
+        h1,p{
+            position: absolute;
+            left: 10vw;
+        }
+        h1{
+            top:40%;
+            font-size: 4rem;
+        }
+        p{
+            top:60%;
+            font-size: 2rem;
+        }
+    }
+    &__text{
+        color: color.$color-text--gray;
+        font-size: min(4vw,2rem);
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        @include mq.mq(tab) {
+            font-size: 2rem;
+        }
+    }
+    &__button{
+        margin-top: 2vh;
+        color:color.$color-text--brown;
+        height: min(10vw,5rem);
+        width: min(40vw,15rem);
+        &:hover{
+            border: solid 1px #000;
+        }
+    }
+}

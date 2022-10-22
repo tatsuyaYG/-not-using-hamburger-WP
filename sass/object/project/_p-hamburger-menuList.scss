@@ -1,0 +1,23 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-hamburger-menuList{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__title{
+        color: color.$color-text--brown;
+        h1{
+        font-size: 2.6rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        }
+
+        @include mq.mq(tab) {
+            margin-bottom: 37px;;
+        }
+        @include mq.mq(pc) {
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+  }
+}
